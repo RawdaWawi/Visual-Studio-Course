@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h1>My Favorite Song</h1>
+
+    <!-- Embedded YouTube Music Video -->
+    <div class="video-container">
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/kJQP7kiw5Fk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Animated Element -->
+    <div id="animatedBox">🎵 Music is life 🎵</div>
+</div>
+
+@section Scripts {
+    <script>
+        // Simple JavaScript Animation
+        let box = document.getElementById("animatedBox");
+        let position = 0;
+        let direction = 1;
+
+        setInterval(() => {
+            if (position > 300 || position < 0) {
+                direction *= -1;
+            }
+            position += 2 * direction;
+            box.style.left = position + 'px';
+        }, 20);
+    </script>
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Rawda_Wawi/1.0.0": {
+        "runtime": {
+          "Rawda_Wawi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rawda_Wawi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
